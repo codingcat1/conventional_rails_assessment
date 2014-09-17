@@ -20,6 +20,10 @@ class SanctuariesController < ApplicationController
     end
   end
 
+  def edit
+    @sanctuary = Sanctuary.find(params[:id])
+  end
+
   private
 
   def sanctuary_params
