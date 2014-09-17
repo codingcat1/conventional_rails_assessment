@@ -14,7 +14,7 @@ class SanctuariesController < ApplicationController
   def create
     @sanctuary = Sanctuary.create(sanctuary_params)
     if @sanctuary.save
-      redirect_to sanctuaries_path
+      redirect_to sanctuaries_path, notice: "Your Sanctuary has been created!"
     else
       render 'new'
     end
@@ -22,6 +22,15 @@ class SanctuariesController < ApplicationController
 
   def edit
     @sanctuary = Sanctuary.find(params[:id])
+  end
+
+  def update
+    @sanctuary = Sanctuary.find(params[:id])
+    if @sanctuary.update(sanctuary_params)
+      redirect_to sanctuary_path(@sanctuary), notice: "Your Sanctuary has been updated!"
+    else
+      render 'edit'
+    end
   end
 
   private
