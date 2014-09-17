@@ -7,4 +7,7 @@ class SanctuariesController < ApplicationController
     @sanctuary = Sanctuary.find(params[:id])
   end
 
+  def new
+    @sanctuary = Sanctuary.new
+  end
 end

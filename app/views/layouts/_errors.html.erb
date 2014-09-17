@@ -1,0 +1,7 @@
+<% if object.errors.any? %>
+  <h4>Please fix these errors:</h4>
+
+  <% object.errors.full_messages.each do |message| %>
+    <p class="bg-danger"><%= message %></p>
+  <% end %>
+<% end %>
