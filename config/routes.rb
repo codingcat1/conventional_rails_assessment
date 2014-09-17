@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :sanctuaries
+  resources :sanctuaries, :except => [:edit]
 end

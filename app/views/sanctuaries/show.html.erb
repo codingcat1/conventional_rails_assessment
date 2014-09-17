@@ -6,8 +6,16 @@
 
 <br />
 <br />
-<p><%= link_to "Edit #{@sanctuary.name}", edit_sanctuary_path(@sanctuary) %></p>
+
 <p><%= link_to "Return to Sanctuary Index", sanctuaries_path %></p>
+
+<br />
+<br />
+
+
+<h4>Edit <%= @sanctuary.name %>:</h4>
+<%= render 'form' %>
+<br />
 <p><%= link_to "Delete #{@sanctuary.name}", sanctuary_path(@sanctuary),
   :data => {:confirm => "You sure?",
             :method => "delete"},
