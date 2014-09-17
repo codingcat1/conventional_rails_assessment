@@ -10,4 +10,19 @@ class SanctuariesController < ApplicationController
   def new
     @sanctuary = Sanctuary.new
   end
+
+  def create
+    @sanctuary = Sanctuary.create(sanctuary_params)
+    if @sanctuary.save
+      redirect_to sanctuaries_path
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+  def sanctuary_params
+    params.require(:sanctuary).permit(:id, :name, :address)
+  end
 end
