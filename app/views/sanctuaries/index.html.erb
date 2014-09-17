@@ -1,0 +1,9 @@
+<% content_for(:title, "All Sanctuaries | Sanctuary Times Finder") %>
+
+
+<h3>Sanctuaries</h3>
+<div class="list-group">
+  <% @sanctuaries.each do |sanctuary| %>
+    <%= link_to sanctuary.name, sanctuary_path(sanctuary), :class => "list-group-item"%>
+  <% end %>
+</div>
