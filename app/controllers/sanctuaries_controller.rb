@@ -33,6 +33,12 @@ class SanctuariesController < ApplicationController
     end
   end
 
+  def destroy
+    @sanctuary = Sanctuary.find(params[:id])
+    @sanctuary.delete
+    redirect_to sanctuaries_path, notice: "#{@sanctuary.name} has been deleted!"
+  end
+
   private
 
   def sanctuary_params
