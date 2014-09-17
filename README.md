@@ -1,4 +1,4 @@
-#CHURCH FINDER
+#SANCTUARY FINDER
 ------------
 ####Created by [Catherine Tran] (https://github.com/tranc489) for the Conventional Rails Assessment on September 26, 2014(starting day)
 
