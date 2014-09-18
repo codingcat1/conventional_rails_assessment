@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe Session do
+describe Appointment do
   it { should validate_presence_of :time}
   it { should validate_uniqueness_of :time }
 

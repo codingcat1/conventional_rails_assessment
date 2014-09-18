@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :users
-  resources :seshes
+  resources :sessions
 
   resources :sanctuaries, :except => [:edit]
   root :to => 'sanctuaries#index'
