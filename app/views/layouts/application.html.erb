@@ -8,10 +8,14 @@
 </head>
 <body>
   <div class="container">
+    <div id="user_header">
+        <%= link_to "Sign Up", new_user_path %>
+    </div>
+
     <h1>Sanctuary Time Finder</h1>
     <p class="bg-primary"><%= flash[:notice] %></p>
     <%= flash[:alert] %>
-<%= yield %>
+    <%= yield %>
   </div>
 </body>
 </html>
