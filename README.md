@@ -4,7 +4,7 @@
 
 #####Description:
 A Program for users to look up the worship times at a particular place of worship.  Admins have ability to create, edit, or destroy existing sanctuaries and worship times.
-![Alt text](http://i.imgur.com/a8w9Qk3.png)
+![Alt text]([http://i.imgur.com/dpAlnSOl.png)
 
 
 #####Instructions:
