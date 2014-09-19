@@ -18,5 +18,4 @@ def sign_up(new_user)
   fill_in 'user_password', :with => new_user.password
   fill_in 'user_password_confirmation', :with => new_user.password_confirmation
   click_button "Sign Up"
-  expect(page).to have_content "Thank you for signing up!"
 end
