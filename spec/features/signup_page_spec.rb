@@ -10,6 +10,11 @@ describe "signing up a new user" do
     sign_up(new_user)
     expect(page).to have_content "Thank you for signing up!"
   end
+
+  it "gives an error message of unauthorization if a nonlogged-in user attempts to create a new user" do
+    visit "users/new"
+    expect(page).to have_content "NOT AUTHORIZED."
+  end
 end
 
 
