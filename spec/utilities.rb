@@ -19,3 +19,10 @@ def sign_up(new_user)
   fill_in 'user_password_confirmation', :with => new_user.password_confirmation
   click_button "Sign Up"
 end
+
+def new_sanctuary(sanctuary)
+  click_link "New Sanctuary"
+  fill_in 'sanctuary_name', :with => sanctuary.name
+  fill_in 'sanctuary_address', :with => sanctuary.address
+  click_button "Create Sanctuary"
+end
